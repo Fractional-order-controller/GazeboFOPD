@@ -19,7 +19,7 @@ k=K;tau=T1;
 [t_time,x_state,y_out]=sim('model.slx',[0,20]);
 %% draw step response comparison
 figure(3)
-h=plot(FOPD.Time,FOPD.Data,'-',IOPID.Time,IOPID.Data,'--');
+h=plot(FOPD.Time,FOPD.Data,'-',IOPID.Time,IOPID.Data,'--','LineWidth',1);
 % legend('FOPD','IOPID')
 legend(h,['FOPD: K=' num2str(K)],['IOPID: K=' num2str(K) ', I=' num2str(ioki)])
 %%
